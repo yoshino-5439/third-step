@@ -27,8 +27,14 @@ class Array
     sort { |a, b| b <=> a }
   end
 end
-	
-p rika.sum, rika.mean, rika.stdev
+
+printf("-----理科-----\n")
+printf("平均点:%f\n", rika.mean)
+printf("標準偏差:%f\n", rika.stdev)
+printf("合計点:%f\n", rika.sum)
+print "偏差値:", rika.stsco, "\n"
+print "並び替え:", rika.sort_desc, "\n"
+
 p eigo.sum, eigo.mean, eigo.stdev
 p rika.stsco
 p rika.sort_desc
