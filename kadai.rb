@@ -10,7 +10,7 @@ class Array
 
   def var
     m = mean
-    reduce(0) { |a, b| a + (b - m) ** 2 } / (size - 1)
+    reduce(0) { |a, b| a + (b - m) ** 2 } / size
   end
 
   def stdev
@@ -35,6 +35,10 @@ printf("合計点:%f\n", rika.sum)
 print "偏差値:", rika.stsco, "\n"
 print "並び替え:", rika.sort_desc, "\n"
 
-p eigo.sum, eigo.mean, eigo.stdev
-p rika.stsco
-p rika.sort_desc
+printf("-----英語-----\n")
+printf("平均点:%f\n", eigo.mean)
+printf("標準偏差:%f\n", eigo.stdev)
+printf("合計点:%f\n", eigo.sum)
+print "偏差値:", eigo.stsco, "\n"
+print "並び替え:", eigo.sort_desc, "\n"
+
